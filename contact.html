@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content-titlep">
+        <p id="titledate">Sunday, 13/09/2003</p> 
+    </div>
+    <div class="content-title"> 
+        <h2>CONTACT ME</h2>
+    </div>
+    <div class="main-content contact">   
+        <div class="main-flex contact"> 
+            <div class="contact-box">
+                <label for="">Username</label><br>
+                <input type="text" name="" id="" placeholder="Username">
+            </div>
+            <div class="contact-box">
+                <label for="">Email</label><br>
+                <input type="text" name="" id="" placeholder="Email">
+            </div>
+            <div class="contact-box">
+                <label for="">Suggestion box</label><br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Suggestion box"></textarea>
+            </div>
+            <div class="contact-box">
+                <button class="button submit" type="submit">Send</button>
+            </div>
+             
+        </div>
+        <div class="main-navigasi"> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">AboutMe</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul> 
+        </div>
+    </div>
+    <script type="text/javascript">
+            const date = new Date(); 
+            const ss = ["Sunday", "Monday", "Tuesday","Wednesday", "Thursday", "Friday", "Saturday"]; 
+            let s = ss[date.getDate()]; 
+            let day = date.getDate();
+            let month = date.getMonth() + 1;
+            let year = date.getFullYear(); 
+            let currentDate = `${s}, ${day}/${month}/${year}`;
+
+        document.getElementById('titledate').innerHTML = currentDate; 
+    </script>
+</body>
+</html>

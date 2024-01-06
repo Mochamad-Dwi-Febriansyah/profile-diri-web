@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content-titlep">
+        <p id="titledate">Sunday, 13/09/2003</p> 
+    </div>
+    <div class="content-title"> 
+        <h2>MY PORTOFOLIO</h2>
+    </div>
+    <div class="main-content portofolio">   
+        <div class="main-flex portofolio">
+            <div class="flex-portofolio-items">
+                <img src="images/images (1).jpg" alt="">
+            </div>
+            <div class="flex-portofolio-items">
+                <img src="images/images.jpg" alt="">
+            </div>
+            <div class="flex-portofolio-items">
+                <img src="images/azin-javadzadeh-Ow4ijRO4ZJw-unsplash.jpg" alt="">
+            </div>
+            <div class="flex-portofolio-items">
+                <img src="images/ba6c6f1291b1643378878eb41fef94c7.jpg" alt="">
+            </div>
+            <div class="flex-portofolio-items">
+                <img src="images/depositphotos_12646625-stock-photo-summer-in-in-the-scotland.jpg" alt="">
+            </div>
+            <div class="flex-portofolio-items">
+                <img src="images/download.jpg" alt="">
+            </div>
+        </div>
+        <div class="main-navigasi"> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">AboutMe</a></li>
+                <li><a href="#">Portofolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul> 
+        </div>
+    </div> 
+    <script type="text/javascript">
+        const date = new Date(); 
+        const ss = ["Sunday", "Monday", "Tuesday","Wednesday", "Thursday", "Friday", "Saturday"]; 
+        let s = ss[date.getDate()]; 
+        let day = date.getDate();
+        let month = date.getMonth() + 1;
+        let year = date.getFullYear(); 
+        let currentDate = `${s}, ${day}/${month}/${year}`;
+
+        document.getElementById('titledate').innerHTML = currentDate; 
+    </script>
+</body>
+</html>
